@@ -1,7 +1,7 @@
 ---
-- name: Install Icecast
+- name: Install Icecast2
   package:
-    name: icecast
+    name: icecast2
     state: present
 
 - name: Install Icecast configuration file
@@ -12,9 +12,9 @@
     group: "{{ icecast_group }}"
     mode: 0640
   notify:
-    - reload icecast
+    - reload icecast2
 
 - name: Enable Icecast service
   service:
-    name: icecast
+    name: icecast2
     enabled: yes

@@ -1,6 +1,6 @@
 ---
 # Reload icecast after a config file update
-- name: reload icecast
+- name: reload icecast2
   service:
-    name: icecast
+    name: icecast2
     state: restarted
